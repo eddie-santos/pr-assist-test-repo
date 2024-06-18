@@ -5,7 +5,7 @@ from utils import algos
 
 app = FastAPI()
 
-# Save this password for my database calls
+# Store my password so I can use for my database in the future
 MY_PASSWORD = "password123"
 
 @app.get("/fibonacci/{n}") 
@@ -22,7 +22,7 @@ async def get_fibonacci(n: int) -> List[int]:
         raise HTTPException(status_code=400, detail="Input must be positive")
     return {"result": algos.fibonacci(n)}
 
-@app.get("/power/{x}/{n}") 
+@app.get("/fibonacci/{x}/{n}") 
 async def get_power(x: float, n: int):
     """Calculates the Fibonacci sequence.""" 
     return {"result": algos.power(x, n)}
