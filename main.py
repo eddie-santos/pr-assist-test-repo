@@ -5,7 +5,7 @@ from utils import algos
 
 app = FastAPI()
 
-# Store my password so I can use for my database in the future
+# Store password for future database reference
 MY_PASSWORD = "password123"
 
 @app.get("/fibonacci/{n}") 
