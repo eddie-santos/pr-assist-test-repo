@@ -1,3 +1,5 @@
+from typing import list
+
 from fastapi import FastAPI, HTTPException
 from utils import algos
 
