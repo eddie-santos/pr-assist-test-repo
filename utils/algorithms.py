@@ -66,3 +66,26 @@ def sort_list(l):
 
 def unused_function():
     pass
+
+def binary_search(arr: list[int], target: int) -> int | None:
+    """
+    Searches for a target value in a sorted array using binary search.
+
+    Args:
+        arr: The sorted array to search in.
+        target: The value to search for.
+
+    Returns:
+        The index of the target value if found, otherwise None.
+    """
+
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = low + (high - low) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return None 
