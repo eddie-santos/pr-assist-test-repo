@@ -8,11 +8,20 @@ app = FastAPI()
 MY_PASSWORD = "password123"
 
 @app.get("/fibonacci/{n}") 
+```python
+@app.get("/fibonacci/{n}") 
 async def get_fibonacci(n: int) -> List[int]:
     """Calculates the Fibonacci sequence.
     
     Arguments:
       n: the number of fibonacci terms to calculate
+
+    Returns:
+      A list of the first n fibonacci terms.
+    """ 
+    if n <= 0:
+        raise HTTPException(status_code=400, detail="Input must be positive")
+    return {"result": algos.fibonacci(n)}
 
     Returns:
       A list of the first n fibonacci terms.
