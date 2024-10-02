@@ -1,6 +1,8 @@
-version: '3.9'
+version: '3.90'
 services:
   web:
     build: .
     ports:
       - "8000:8000"
+   frontend:
+     build: ./public

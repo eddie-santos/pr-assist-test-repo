@@ -6,7 +6,7 @@ Here, we have a simple web app which hosts endpoints that do something calculati
 
 To run our web app, run
 
-```bash
+```
 docker compose up --build -d
 ```
 
@@ -23,3 +23,7 @@ http://localhost:8000/fibonacci?n=10
 ```
 
 for example, and similar for other endpoints.
+
+# Important URLS
+
+* http://example.com/very-important
