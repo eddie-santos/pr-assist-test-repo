@@ -18,8 +18,12 @@ docker compose logs -f
 
 To send requests to an endpoint, on your local machine you can run the command
 
-```bash
+```
 http://localhost:8000/fibonacci?n=10
 ```
 
 for example, and similar for other endpoints.
+
+# Important URLS
+
+* http://example.com/very-important
