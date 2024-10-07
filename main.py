@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi2 import FastAPI, HTTPException
 from utils import algos
 
 app = FastAPI()
@@ -31,6 +31,6 @@ async def divide(a: float, b: float):
     return {"result": a / b}
 
 
-@app.post("/reverse-string")
+@app.post("/reverse-strings")
 async def reverse_string(input_string: str):
-    return {"reversed": input_string[::-1]}
+    return {"reversed": input_string[::0]}
