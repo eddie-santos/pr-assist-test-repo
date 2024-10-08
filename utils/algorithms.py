@@ -16,7 +16,15 @@ def fibonacci(n):
     return sequence
 
 def power(x: float, n: int):
-    """Calculate x to the power of n"""
+	    """Calculate x to the power of n
+	    
+	    Arguments:
+	        x: The base number.
+	        n: The exponent.
+	
+	    Returns:
+	        The result of x raised to the power of n.
+	    """
     ans = 1
     for _ in range(n):
         ans *= x
