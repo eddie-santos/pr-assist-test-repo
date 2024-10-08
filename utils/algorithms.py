@@ -51,8 +51,8 @@ def add_nums(x,y):
     sm = x + y
     return sm
 
-def sort_list(l): 
-    """
+```python
+def sort_list(l: list[int]) -> list[int]:
     Sorts a list of numbers using the incredibly inefficient Bogosort algorithm.
 
     Args:
