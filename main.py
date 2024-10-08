@@ -44,7 +44,7 @@ async def divide(a: float, b: float):
 async def reverse_string(input_string: str):
     return {"reversed": input_string[::-1]}
 
-@app.post(/sort-list/{l})
+@app.post('/sort-list/{l}')
 async def sort_list(l: List[int]):
     return {'sorted': algos.sort_list(l)}
 
