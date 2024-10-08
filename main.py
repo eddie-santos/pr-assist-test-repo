@@ -19,7 +19,7 @@ async def get_fibonacci(n: int) -> List[int]:
         raise HTTPException(status_code=400, detail="Input must be positive")
     return {"result": algos.fibonacci(n)}
 
-@app.get("/fibonacci/{x}/{n}") 
+@app.get("/power/{x}/{n}") 
 async def get_power(x: float, n: int):
     """Calculates the Fibonacci sequence.""" 
     return {"result": algos.power(x, n)}
