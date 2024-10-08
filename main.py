@@ -21,8 +21,17 @@ async def get_fibonacci(n: int) -> List[int]:
 
 @app.get("/power/{x}/{n}") 
 async def get_power(x: float, n: int):
-    """Calculates the Fibonacci sequence.""" 
-    return {"result": algos.power(x, n)}
+```python
+    """
+    Calculates the power of a number.
+    
+    Arguments:
+        x: The base number.
+        n: The exponent.
+
+    Returns:
+        The result of x raised to the power of n.
+    """
 
 
 @app.get("/factorial/{n}")
