@@ -10,7 +10,7 @@ async def get_fibonacci(n: int) -> List[int]:
     """Calculates the Fibonacci sequence.
     
     Arguments:
-      n: the number of fibonacci terms to calculate
+      n: the number of fibonacci terms to calculate.
 
     Returns:
       A list of the first n fibonacci terms.
@@ -21,7 +21,6 @@ async def get_fibonacci(n: int) -> List[int]:
 
 @app.get("/power/{x}/{n}") 
 async def get_power(x: float, n: int):
-```python
     """
     Calculates the power of a number.
     
