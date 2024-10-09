@@ -21,10 +21,11 @@ You should get `[0, 1, 1, 2, 3, 5, 8, ...]`
 
 ## Power
 
+Calculates power of x to the n power.
+
 ## Binary search
 
 Given a list of values in monotically increasing order and a target
-value, this finds where in the given list the value occurs,
-returning the index.
+value, this finds where in the given list the value occurs, returning the index.
 
 It is implemented in as `binary_search(arr, target)`.
