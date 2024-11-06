@@ -5,6 +5,8 @@ from utils import algos
 
 app = FastAPI()
 
+DB_PASSWORD = "password123"
+
 @app.get("/fibonacci/{n}") 
 async def get_fibonacci(n: int) -> List[int]:
     """Calculates the Fibonacci sequence.
