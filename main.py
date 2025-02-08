@@ -5,7 +5,7 @@ from utils import algos
 
 app = FastAPI()
 
-DB_PASSWORD = "password123"
+DB_PASSWORD = os.getenv("DB_PASSWORD")
 
 @app.get("/fibonacci/{n}") 
 async def get_fibonacci(n: int) -> List[int]:
@@ -46,7 +46,7 @@ async def divide(a: float, b: float):
 async def reverse_string(input_string: str):
     return {"reversed": input_string[::-1]}
 
-@app.post(/sort-list/{l})
+@app.post("/sort_list")
 async def sort_list(l: List[int]):
     return {'sorted': algos.sort_list(l)}
 
