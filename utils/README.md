@@ -23,8 +23,8 @@ You should get `[0, 1, 1, 2, 3, 5, 8, ...]`
 
 ## Binary search
 
-Given a list of values in monotically increasing order and a target
+Given a list of values in monotonically increasing order and a target
 value, this finds where in the given list the value occurs,
-returning the index.
+returning the index, or -1 if the target is not found.
 
 It is implemented in as `binary_search(arr, target)`.
