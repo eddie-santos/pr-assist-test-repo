@@ -22,3 +22,6 @@ def sort_list(lst):
 
 def unused_function():
     pass
+
+def is_palindrome(s):
+    return s == s[::-1]
